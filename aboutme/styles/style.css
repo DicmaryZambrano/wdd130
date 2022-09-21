@@ -1,0 +1,33 @@
+body {
+    background-color: rgb(232, 206, 164);
+    text-align: center;
+
+}
+
+h1 {
+    color: rgb(71, 41, 27);
+}
+
+a {
+    color: rgb(230, 178, 146);
+}
+
+p {
+    color: rgb(49, 22, 9);
+    padding: 5px;
+}
+
+div{
+    padding: -15px;
+    background-color: rgba(250, 235, 215, 0.574);
+}
+
+nav{
+    padding: 10px;
+    background-color: rgba(63, 39, 15, 0.876);
+}
+
+footer{
+    padding: 1px;
+    background-color: rgba(63, 39, 15, 0.876);
+}
