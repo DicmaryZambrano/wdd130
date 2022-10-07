@@ -1,0 +1,58 @@
+
+body{
+    text-align: center;
+    background-color: rgb(250, 167, 201);
+    font-family: 'Inter Tight', sans-serif;
+    color: beige;
+}
+
+div.list_container {
+    text-align: center;
+  }
+  
+ol.articles_fait {
+    display: inline-block;
+    text-align: left;
+    font-size: 100%;
+    font-style: bold;
+    color: black;
+    font-weight: bold;
+}
+
+li {
+    margin: 1em;
+}
+
+h1.title {
+    font-size: 3.5em;
+}
+
+h1.title:hover {
+    color: black;
+}
+
+p.big {
+    font-size: 1.8em;
+    margin: 2em 30%;
+}
+
+p.small {
+    margin: 0 15%;
+}
+
+img.russell {
+    display: inline-block;
+    width: 15%;
+}
+
+div.russell_container {
+    text-align: center;
+}
+
+footer {
+    color: black;
+}
+
+footer p {
+    margin: 0 40%;
+}
