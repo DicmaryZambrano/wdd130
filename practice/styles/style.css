@@ -1,0 +1,16 @@
+body {
+    background-color: rgb(115, 115, 115);
+    margin: 0;
+    text-align: center;
+}
+
+#hero-image {
+    width: 100%;
+}
+
+.icon-gallery img{
+    width: 15%;
+    border: 1.5em solid rgb(68, 68, 68);
+    border-radius: 50%;
+    margin: 4% 5%;
+}
