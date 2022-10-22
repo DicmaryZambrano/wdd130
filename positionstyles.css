@@ -2,7 +2,7 @@
 /* Activity 1 styles */
 .content1 {
   display: grid;
-  grid-template-columns: repeat(2, 100%);
+  grid-template-columns: repeat(2, 1fr);
   justify-items: center;
   grid-gap: 20px;
 }
@@ -67,7 +67,7 @@
 /* Activity 3 styles */ 
 .content3 {
   display: grid;
-  grid-template-columns: repeat(2,100%);
+  grid-template-columns: repeat(2,1fr);
   grid-template-rows: 200px 400px 200px;
   grid-column-gap: 150px;
 }
@@ -99,7 +99,7 @@
   /* This is the parent of the activity 4 boxes. */
   height: 600px;
   display: grid;
-  grid-template-columns: repeat(2,50%);
+  grid-template-columns: repeat(2,1fr);
   grid-template-rows: repeat(3,1fr);
 }
 .red4 {
@@ -133,7 +133,7 @@
 /* Activity 5 styles */ 
 .content5 {
   /* This is the parent of the activity 5 boxes. */
-  height: 600px;
+  height: 650px;
 }
 .red5 { 
   width: 100%; 
@@ -145,13 +145,12 @@
   height: 250px; 
   background-color: green; 
   float: left;
-
 } 
 .yellow5 {
   width: 100%; 
-  height: 300px; 
+  height: 350px; 
   background-color: gold; 
-
+  font-size: 32px;
 } 
 .blue5 {
   width: 100%; 
@@ -195,9 +194,6 @@
   grid-column: 2/span 4;
   grid-row: 2/span 4;
 } 
-.yellow5 {
-  font-size: 19px;
-}
 
 /* Do not make any changes below here */
 .activity {
