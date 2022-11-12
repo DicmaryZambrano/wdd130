@@ -33,9 +33,13 @@ h2, h1, h4{
 .home-container{
     background-color: white;
     height: auto;
-    width: 25%; 
+    width: 510px; 
     margin: 0 auto;
     border-radius: 25px;
+}
+
+.gray {
+    color: gray;
 }
 
 #hero-img img{
@@ -46,9 +50,10 @@ h2, h1, h4{
 
 .footer-grid{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    background-color: rgb(72, 93, 156);
+    grid-template-columns: 1fr 1fr 1fr;
     border-radius: 0px 0px 25px 25px;
+    border-radius: 0px 0px 25px 25px;
+    background-color: rgb(72, 93, 156);
 }
 
 .footer-info{
@@ -58,6 +63,7 @@ h2, h1, h4{
 .footer-info p{
     margin-top: 0px;
     padding-top: 0px;
+    margin: 0;
 }
 
 .footer-info h2{
@@ -68,22 +74,17 @@ h2, h1, h4{
 }
 
 .container-1{
-    display: flex;
-    align-items: center;
-    justify-content: center;
     grid-column: 1/2;
+    border: 1px solid gray;
 }
 
 .container-2{
-    display: flex;
-    align-items: center;
-    justify-content: center;
     grid-column: 2/3;
+    border: 1px solid gray;
+
 }
 
 .container-3{
-    display: flex;
-    align-items: center;
-    justify-content: center;
     grid-column: 3/4;
+    border: 1px solid gray;
 }
