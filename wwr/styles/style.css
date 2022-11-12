@@ -340,6 +340,7 @@ footer .social a:hover {
         display: block;
         height: auto;
     }
+
     nav, footer {
         flex-direction: column;
     }
@@ -374,5 +375,42 @@ footer .social a:hover {
     }
     footer {
         margin-top: 25px;
+    }
+
+    /*rivers @meadia*/
+
+    .rivers-grid{
+        display: block;
+        height: auto;
+    }
+
+    .banner-title{
+        font-size: 20px;
+    }
+
+    .banner-imag{
+        height: 200px;
+    }
+
+    .banner-box{
+        height: 220px;
+    }
+
+    .river-img, #river-2 .river-img{
+        grid-column: 3/9;
+        height: auto;
+    }
+
+    .river-info-2, #river-2 .river-info-2{
+        grid-row: 4/5;
+        grid-column: 3/9;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .river-info-3{
+        grid-column: 3/9;
+        grid-row: 5/6;
+
     }
 }
