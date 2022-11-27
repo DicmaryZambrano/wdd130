@@ -1,12 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@200;400&family=Heebo:wght@100;400;700&display=swap');
 
-:root{
-    --primary-color: #EF476F  ;
-    --secondary-color: #0B0033 ;
-    --accent1-color: #03B5AA;
-    --accent2-color: #0A88CD;
-}
-
 /*#Home Style*/
 
 body{
@@ -254,8 +247,13 @@ footer .links{
     padding: 50px;
 }
 
-footer a{
+.links-box a{
     color: #F4F1EF;
+    text-decoration: none;
+}
+
+.links-box a:hover{
+    color: #EF476F;
     text-decoration: none;
 }
 
@@ -287,18 +285,16 @@ footer p{
     color: #F4F1EF;
 }
 
-.contact-msg p{
+footer .contact-msg p{
     text-align: left;
 }
 
-.contact-msg p a{
+footer .contact-msg p a{
     color: #F4F1EF;
-    text-decoration: dashed;
 }
 
 .contact-msg p a:hover{
-    color: #EF476F;
-    text-decoration: dashed;
+    color: #0B0033;
 }
 
 .contact-img{
