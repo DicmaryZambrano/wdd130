@@ -335,6 +335,7 @@ footer .contact-msg p a{
 
     #hero-image{
         grid-row: 1/2;
+        object-fit:cover;
     }
 
     #hero-msg{
@@ -381,6 +382,30 @@ footer .contact-msg p a{
         padding: 20px 100px 80px 80px;
         color: #F4F1EF;
         z-index: 2;
+    }
+
+  }
+
+@media screen and (max-width: 600px) {
+
+    body{
+        font-size: 20px;
+    }
+
+    h1{
+        font-size: 29px;
+    }
+
+    h2{
+        font-size: 15;
+    }
+
+    .about-msg-container{
+        padding: 20px 10px 40px 10px;
+    }
+
+    .commission-msg{
+        padding: 20px 10px 40px 10px;
     }
 
   }
