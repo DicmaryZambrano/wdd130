@@ -4,18 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
     <title>Commissions</title>
 </head>
 <body>
     <div id="content">
-        <header>
+        <header class="header" id="myHeader">
             <a href="index.html" id="logo_link">
-                <img class="logo" src="images/logo-withe.png" alt="D Creations logo-withe">
+                <img class="logo" src="images/logo-withe.png" alt="DZ Creations logo-withe">
             </a>
             <nav>
                 <a href="index.html">Home</a>
                 <a href="about.html">About</a>
-                <a href="commissions.html">Commissions</a>
+                <a class="active" href="commissions.html">Commissions</a>
                 <a href=#>Portfolio</a>
                 <a href=#>Contact</a>
             </nav>
@@ -23,9 +24,7 @@
 
         <main id="commissions-grid">
             <div id="hero">
-                <div id="hero-box">
-                    <img id="hero-image" src="images/commission-banner.png" alt="Happy characters">
-                </div>
+                <img id="hero-image" src="images/commission-banner.png" alt="Happy characters">
                 <div id="hero-msg">
                     <h1 class="home-msg">
                         Welcome to my shop
@@ -81,48 +80,71 @@
                 and character designs that have a lot of elements can rise the price to the 
                 illustration.
             </p>
-            <div class="grid-container">
-                <div class="grid-header-1">BACKGROUNDS</div>
-                <div class="grid-subtitle-1">LINEART</div>
-                <div class="grid-subtitle-2">CELL SHADED</div>
-                <div class="grid-subtitle-3">PAINTED</div>
-                <div class="grid-item">Landscapes</div>
-                <div class="grid-price1">$10</div>
-                <div class="grid-price2">$25</div>
-                <div class="grid-price3">$35</div>
-                <div class="grid-item">Cityscapes</div>
-                <div class="grid-price1">$15</div>
-                <div class="grid-price2">$30</div>
-                <div class="grid-price3">$40</div>
-                <div class="grid-header-2">CHARACTERS</div>
-                <div class="grid-subtitle-1">LINEART</div>
-                <div class="grid-subtitle-2">CELL SHADED</div>
-                <div class="grid-subtitle-3">PAINTED</div>
-                <div class="grid-item">Full-Body</div>
-                <div class="grid-price1">$15</div>
-                <div class="grid-price2">$40</div>
-                <div class="grid-price3">$45</div>
-                <div class="grid-item">Mid-Body</div>
-                <div class="grid-price1">$10</div>
-                <div class="grid-price2">$30</div>
-                <div class="grid-price3">$35</div>
-                <div class="grid-item">Bust</div>
-                <div class="grid-price1">$5</div>
-                <div class="grid-price2">$10</div>
-                <div class="grid-price3">$20</div>
-                <div class="grid-header-3">CHARACTER SHEET</div>
-                <div class="grid-subtitle-1">LINEART</div>
-                <div class="grid-subtitle-2">CELL SHADED</div>
-                <div class="grid-subtitle-3">PAINTED</div>
-                <div class="grid-item">Front view Back view Side View</div>
-                <div class="grid-price1">$30</div>
-                <div class="grid-price2">$75</div>
-                <div class="grid-price3">$105</div>
-                <div class="grid-item">Front view Back view</div>
-                <div class="grid-price1">$20</div>
-                <div class="grid-price2">$25</div>
-                <div class="grid-price3">$35</div>
+            <div class="table-container" style="overflow-x:auto;">
+                <table id="price-table">
+                    <tr class="table-title">
+                        <th>BACKGROUNDS</th>
+                        <th>LINEART</th>
+                        <th>CELL SHADED</th>
+                        <th>PAINTED</th>
+                    </tr>
+                    <tr>
+                        <td>Landscapes</td>
+                        <td>$10</td>
+                        <td>$25</td>
+                        <td>$35</td>
+                    </tr>
+                    <tr>
+                        <td>Cityscapes</td>
+                        <td >$15</td>
+                        <td>$30</td>
+                        <td>$40</td>
+                    </tr>
+                    <tr class="table-title">
+                        <th>CHARACTERS</th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                    <tr>                
+                        <td>Full-Body</td>
+                        <td>$15</td>
+                        <td>$40</td>
+                        <td>$45</td>
+                    </tr>
+                    <tr>
+                        <td>Mid-Body</td>
+                        <td>$10</td>
+                        <td>$30</td>
+                        <td>$35</td>
+                    </tr>
+                    <tr>
+                        <td>Bust</td>
+                        <td>$5</td>
+                        <td>$10</td>
+                        <td>$20</td>
+                    </tr>
+                    <tr class="table-title">
+                        <th>CHARACTER SHEET</th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <td>Front view Back view Side View</td>
+                        <td>$30</td>
+                        <td>$75</td>
+                        <td>$105</td>
+                    </tr>
+                    <tr>
+                        <td>Front view Back view</td>
+                        <td>$20</td>
+                        <td>$25</td>
+                        <td>$35</td>
+                    </tr>
+                </table>
             </div>
+
             <h2>HOW TO PAY</h2>
             <p>
                 For the moment I only accept PayPal payments to my personal commissions account. 
@@ -142,11 +164,13 @@
                 <img src="images/dicmary3.png" alt="Dicmary photo" width="500" height="500">
             </section>
             <div class="links-box">
-                <p><a href="creations-site-plan.html">Site Plan</a></p>
-                <p><a href="about.html">About</a></p>
-                <p><a href="commissions.html">Commissions</a></p>
-                <p><a href=#>Portfolio</a></p>
-                <p><a href=#>Contact</a></p>
+                <div class="links">
+                    <p><a href="creations-site-plan.html">Site Plan</a></p>
+                    <p><a href="about.html">About</a></p>
+                    <p><a href="commissions.html">Commissions</a></p>
+                    <p><a href=#>Portfolio</a></p>
+                    <p><a href=#>Contact</a></p>
+                </div>
                 <div class="social">
                     <a href="https://facebook.com" target="_blank">
                         <img src="images/facebook-icon.png" alt="fb icon">
@@ -158,7 +182,7 @@
                         <img src="images/linkedin-icon.png" alt="instagram icon">
                     </a>
                 </div>
-                <p>DZ creations &copy; 20XX - Dicmary Zambrano</p>
+                <p class="copy">DZ creations &copy; 20XX - Dicmary Zambrano</p>
             </div>
         </footer>
     </div>
