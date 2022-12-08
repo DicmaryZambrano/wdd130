@@ -149,7 +149,6 @@ img{
     grid-template-columns: repeat(8,1fr);
     grid-template-rows: 50px 1fr 50px;
     color: #F4F1EF;
-    margin-bottom: 100px;
 }
 
 .commission-img{
@@ -177,8 +176,51 @@ img{
 
 /*#Commissions Style*/
 
+#commissions-grid{
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+}
+
+#commissions-grid h2{
+    color: #EF476F;
+}
+
+#steps-container, #pricing-container{
+    grid-column: 2/10;
+}
+
+.steps-box{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.steps{
+    background-color: #0A88CD;
+    font-size: x-large;
+    color: #F4F1EF;
+    width: 250px;
+    padding: 30px;
+    border: solid 5px #F4F1EF;
+    border-radius: 2%;
+}
+
+.step-img{
+    border-radius: 50%;
+    height: auto;
+    width: 100%;
+    border: solid 5px #F4F1EF;
+}
+
+.coommission-title{
+    margin-top: 80px;
+}
+
 .table-container{
-    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
     width: 100%;
 }
 
@@ -193,35 +235,42 @@ td, th {
     text-align: left;
     padding: 8px;
 }
-  
-tr:nth-child(even) {
-    background-color: #dddddd;
+
+th {
+    background-color: #03B5AA;
+    color: #f1f1f1;
+    height: 50px;
+}
+
+td{
+    color: #0B0033;
+    background-color: #03b5a930;
+    height: 70px;
 }
 
 /*About Style*/
+
 #about-grid{
     display: grid;
     grid-template-columns: repeat(10, 1fr);
 }
 
-.about-box{
+#about-container{
     grid-column: 1/span 10;
     display: grid;
     grid-template-columns: repeat(10, 1fr);
     margin-top: 80px;
-    margin-bottom: 80px;
 }
 
-.about-box h2{
+#about-container h2{
     color: #EF476F;
 }
 
-.about-box p,h2{
+#about-container p,h2{
     grid-column: 2/span 8;
 }
 
-
-.about-box img{
+#about-container img{
     height: 500px;
     width: 100%;
     grid-column: 3/span 6;
@@ -231,6 +280,123 @@ tr:nth-child(even) {
     object-fit: cover;
 }
 
+/*Porfolio Style*/
+
+body {
+    font-family: Arial;
+    margin: 0;
+}
+
+#porfolio-grid {
+     box-sizing: border-box;
+}
+
+img {
+     vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+     position: relative;
+}
+
+/* Hide the images by default */
+
+.myBackgrounds {
+    display: none;
+}
+
+.mySlides {
+    display: none;
+    background-color: rgba(34, 34, 34, 0.741);
+}
+
+.mySlides img{
+    height: 400px;
+    object-fit:scale-down;
+}
+
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -100px;
+    color: #F4F1EF;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.889);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #F4F1EF;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* Container for image text */
+
+.caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: #F4F1EF;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Six columns side by side */
+.column {
+    float: left;
+    width: 16.66%;
+    height: auto;
+}
+
+.column img{
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+    opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+    opacity: 1;
+}
 
 /*Header and Footer*/
 
@@ -304,6 +470,10 @@ footer .links{
     padding: 10px;
 }
 
+footer{
+    margin-top: 100px;
+}
+
 footer p{
     text-align: center;
     margin-top: 0;
@@ -339,123 +509,6 @@ footer .contact-msg p a{
     grid-column: 8/10;
     grid-row: 1/2;
     width: 100%;
-}
-
-/*Porfolio Style*/
-
-body {
-    font-family: Arial;
-    margin: 0;
-}
-
-#porfolio-grid {
-     box-sizing: border-box;
-}
-
-img {
-     vertical-align: middle;
-}
-
-/* Position the image container (needed to position the left and right arrows) */
-.container {
-     position: relative;
-}
-
-/* Hide the images by default */
-
-.myBackgrounds {
-    display: none;
-}
-
-.mySlides {
-    display: none;
-    background-color: rgba(34, 34, 34, 0.741);
-}
-
-.mySlides img{
-    height: 400px;
-    object-fit:scale-down;
-}
-
-
-/* Add a pointer when hovering over the thumbnail images */
-.cursor {
-  cursor: pointer;
-}
-
-/* Next & previous buttons */
-.prev,
-.next {
-    cursor: pointer;
-    position: absolute;
-    top: 40%;
-    width: auto;
-    padding: 16px;
-    margin-top: -100px;
-    color: white;
-    font-weight: bold;
-    font-size: 20px;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-    -webkit-user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-    background-color: rgba(0, 0, 0, 0.889);
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-}
-
-/* Container for image text */
-.caption-container {
-    text-align: center;
-    background-color: #222;
-    padding: 2px 16px;
-    color: white;
-}
-
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-/* Six columns side by side */
-.column {
-    float: left;
-    width: 16.66%;
-    height: auto;
-}
-
-.column img{
-    height: 200px;
-    width: 100%;
-    object-fit: cover;
-}
-
-/* Add a transparency effect for thumnbail images */
-.demo {
-    opacity: 0.6;
-}
-
-.active,
-.demo:hover {
-    opacity: 1;
 }
 
 @media screen and (max-width: 900px) {
@@ -548,11 +601,11 @@ img {
     }
 
     h1{
-        font-size: 29px;
+        font-size: 30px;
     }
 
     h2{
-        font-size: 15px;
+        font-size: 30px;
     }
 
     .about-msg-container{
@@ -562,5 +615,16 @@ img {
     .commission-msg{
         padding: 20px 10px 40px 10px;
     }
+
+    .steps{
+        background-color: #0A88CD;
+        font-size: large;
+        color: #F4F1EF;
+        width: 150px;
+        padding: 30px;
+        border: solid 5px #F4F1EF;
+        border-radius: 2%;
+    }
+
 
   }
